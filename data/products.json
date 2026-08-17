@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Fresh Milk",
+        "description": "Fresh farm milk collected every morning.",
+        "price": "60",
+        "unit": "L",
+        "image": "milk.jpg"
+    },
+    {
+        "name": "Fresh Curd",
+        "description": "Fresh natural dairy curd.",
+        "price": "80",
+        "unit": "kg",
+        "image": "curd.jpg"
+    },
+    {
+        "name": "Pure Ghee",
+        "description": "Pure traditional dairy ghee.",
+        "price": "650",
+        "unit": "kg",
+        "image": "ghee.jpg"
+    },
+    {
+        "name": "Fresh Paneer",
+        "description": "Soft and fresh farm paneer.",
+        "price": "400",
+        "unit": "kg",
+        "image": "paneer.jpg"
+    }
+]

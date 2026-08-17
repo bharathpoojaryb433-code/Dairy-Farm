@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Ramesh Kumar",
+        "farm": "Green Valley Dairy",
+        "location": "Karnataka",
+        "cows": 18,
+        "milk": 120,
+        "image": "farmer1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Suresh Gowda",
+        "farm": "Fresh Milk Farm",
+        "location": "Karnataka",
+        "cows": 25,
+        "milk": 180,
+        "image": "farmer1.jpg"
+    }
+]

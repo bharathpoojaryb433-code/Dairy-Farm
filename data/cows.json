@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Lakshmi",
+        "breed": "Holstein Friesian",
+        "milk": "20",
+        "image": "cow1.jpg"
+    },
+    {
+        "name": "Ganga",
+        "breed": "Jersey",
+        "milk": "18",
+        "image": "cow2.jpg"
+    },
+    {
+        "name": "Kamadhenu",
+        "breed": "Gir",
+        "milk": "15",
+        "image": "cow3.jpg"
+    }
+]

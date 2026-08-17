@@ -1,0 +1,70 @@
+/* ================================
+   PRODUCTS
+================================ */
+
+.product-grid {
+    width: 90%;
+
+    max-width: 1300px;
+
+    margin: 30px auto 80px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 28px;
+}
+
+.product-card {
+    min-height: 450px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.product-card img {
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.product-card h2,
+.product-card h3 {
+    color: #236b35;
+}
+
+.product-card .price {
+    font-size: 21px;
+
+    color: #4d9637;
+}
+
+.buy-btn {
+    width: 100%;
+
+    font-size: 16px;
+}
+
+.product-description {
+    min-height: 55px;
+}
+
+/* Cow food */
+
+.food-grid {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}

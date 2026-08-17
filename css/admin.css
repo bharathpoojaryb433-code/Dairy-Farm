@@ -1,0 +1,93 @@
+/* ================================
+   ADMIN
+================================ */
+
+.admin-container {
+    width: 90%;
+
+    max-width: 1400px;
+
+    margin: 40px auto;
+}
+
+.admin-title {
+    color: #236b35;
+
+    margin-bottom: 30px;
+}
+
+.admin-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+.admin-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 7px 20px rgba(0,0,0,0.08);
+
+    text-align: center;
+}
+
+.admin-card span {
+    font-size: 38px;
+
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+.admin-card h2 {
+    color: #236b35;
+}
+
+.admin-card p {
+    color: #666;
+}
+
+.admin-sidebar {
+    background: #164b25;
+
+    min-height: 100vh;
+
+    padding: 25px;
+
+    width: 250px;
+}
+
+.admin-sidebar a {
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px;
+
+    margin-bottom: 5px;
+
+    border-radius: 7px;
+}
+
+.admin-sidebar a:hover {
+    background: #4d9637;
+}
+
+.admin-layout {
+    display: flex;
+
+    min-height: 80vh;
+}
+
+.admin-content {
+    flex: 1;
+
+    padding: 35px;
+}
