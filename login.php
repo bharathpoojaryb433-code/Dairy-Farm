@@ -25,22 +25,30 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $_SESSION["role"] = $user["role"];
 
             if ($user["role"] === "admin") {
+
                 header("Location: admin/dashboard.php");
+
             } else {
+
                 header("Location: index.php");
+
             }
 
             exit();
+
         }
+
     }
 
     $error = "Invalid username or password.";
+
 }
 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
 
@@ -49,123 +57,56 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>DairyFarm Login</title>
+    <title>Dairy Farm Login</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="css/style.css">
 
 </head>
 
-<body class="login-page">
+<body>
 
-    <!-- 3D BACKGROUND -->
+<div class="login-container">
 
-    <div class="bg-animation">
+    <form
+        class="login-box"
+        method="POST">
 
-        <div class="circle circle1"></div>
-        <div class="circle circle2"></div>
-        <div class="circle circle3"></div>
+        <h1>🐄 DairyFarm</h1>
 
-        <div class="cube cube1"></div>
-        <div class="cube cube2"></div>
+        <h2>Login</h2>
 
-    </div>
+        <?php if ($error): ?>
 
-
-    <!-- FLOATING COW -->
-
-    <div class="cow-3d">
-
-        <img src="images/cow1.jpg"
-             alt="Dairy Cow">
-
-    </div>
-
-
-    <!-- LOGIN -->
-
-    <div class="login-container">
-
-        <div class="login-box">
-
-            <div class="login-logo">
-                🐄
-            </div>
-
-            <h1>DairyFarm</h1>
-
-            <p class="login-subtitle">
-                Fresh Farm • Healthy Life
+            <p class="error">
+                <?= htmlspecialchars($error) ?>
             </p>
 
-            <h2>Welcome Back 👋</h2>
+        <?php endif; ?>
 
+        <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            required>
 
-            <?php if ($error): ?>
+        <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required>
 
-                <p class="error">
-                    <?= htmlspecialchars($error) ?>
-                </p>
+        <button
+            type="submit"
+            class="btn">
 
-            <?php endif; ?>
+            Login
 
+        </button>
 
-            <form method="POST">
+    </form>
 
-                <div class="login-input">
-
-                    <label>Username</label>
-
-                    <input
-                        type="text"
-                        name="username"
-                        placeholder="Enter username"
-                        required>
-
-                </div>
-
-
-                <div class="login-input">
-
-                    <label>Password</label>
-
-                    <input
-                        type="password"
-                        name="password"
-                        placeholder="Enter password"
-                        required>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="login-btn">
-
-                    🔐 Login
-
-                </button>
-
-            </form>
-
-
-            <a href="index.php"
-               class="back-home">
-
-                ← Back to Home
-
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- FLOATING MILK -->
-
-    <div class="milk milk1">🥛</div>
-    <div class="milk milk2">🥛</div>
-    <div class="milk milk3">🥛</div>
+</div>
 
 </body>
-
 </html>

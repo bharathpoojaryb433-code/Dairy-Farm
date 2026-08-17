@@ -12,11 +12,10 @@ $cows = readJSON("cows.json");
     <h1>🐄 Our Cows</h1>
 
     <p>
-        Meet the healthy cows of our dairy farm.
+        Learn about our healthy dairy cows.
     </p>
 
 </section>
-
 
 <section class="cards">
 
@@ -26,29 +25,40 @@ $cows = readJSON("cows.json");
 
         <img
             src="images/<?= htmlspecialchars($cow['image']) ?>"
-            alt="Cow"
-        >
+            alt="Cow">
 
         <h2>
             <?= htmlspecialchars($cow['name']) ?>
         </h2>
 
         <p>
-            Breed:
+            <b>Breed:</b>
             <?= htmlspecialchars($cow['breed']) ?>
         </p>
 
         <p>
-            Milk:
-            <?= htmlspecialchars($cow['milk']) ?>
-            L/day
+            <b>Age:</b>
+            <?= htmlspecialchars($cow['age']) ?>
         </p>
+
+        <p>
+            <b>Milk:</b>
+            <?= htmlspecialchars($cow['milk']) ?> L/day
+        </p>
+
+        <p>
+            <b>Food:</b>
+            <?= htmlspecialchars($cow['food']) ?>
+        </p>
+
+        <span class="status">
+            <?= htmlspecialchars($cow['status']) ?>
+        </span>
 
     </div>
 
 <?php endforeach; ?>
 
 </section>
-
 
 <?php include "includes/footer.php"; ?>

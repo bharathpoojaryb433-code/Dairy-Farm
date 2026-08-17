@@ -23,7 +23,7 @@ $products = readJSON("products.json");
             <th>Product</th>
             <th>Price</th>
             <th>Unit</th>
-        </tr>    
+        </tr>
 
     </thead>
 

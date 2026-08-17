@@ -11,12 +11,7 @@ $farmers = readJSON("farmers.json");
 
     <h1>👨‍🌾 Our Farmers</h1>
 
-    <p>
-        Meet the people who take care of our dairy farm.
-    </p>
-
 </section>
-
 
 <section class="cards">
 
@@ -26,15 +21,30 @@ $farmers = readJSON("farmers.json");
 
         <img
             src="images/<?= htmlspecialchars($farmer['image']) ?>"
-            alt="Farmer"
-        >
+            alt="Farmer">
 
         <h2>
             <?= htmlspecialchars($farmer['name']) ?>
         </h2>
 
         <p>
-            📍 <?= htmlspecialchars($farmer['location']) ?>
+            Farm:
+            <?= htmlspecialchars($farmer['farm']) ?>
+        </p>
+
+        <p>
+            Location:
+            <?= htmlspecialchars($farmer['location']) ?>
+        </p>
+
+        <p>
+            Cows:
+            <?= htmlspecialchars($farmer['cows']) ?>
+        </p>
+
+        <p>
+            Milk Collection:
+            <?= htmlspecialchars($farmer['milk']) ?> L/day
         </p>
 
     </div>
@@ -42,6 +52,5 @@ $farmers = readJSON("farmers.json");
 <?php endforeach; ?>
 
 </section>
-
 
 <?php include "includes/footer.php"; ?>

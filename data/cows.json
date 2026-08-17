@@ -1,20 +1,32 @@
 [
     {
+        "id": 1,
         "name": "Lakshmi",
-        "breed": "Holstein Friesian",
-        "milk": "20",
+        "breed": "Jersey",
+        "age": "4 Years",
+        "milk": 12,
+        "food": "Green Grass + Cattle Feed",
+        "status": "Healthy",
         "image": "cow1.jpg"
     },
     {
+        "id": 2,
         "name": "Ganga",
-        "breed": "Jersey",
-        "milk": "18",
+        "breed": "Holstein Friesian",
+        "age": "5 Years",
+        "milk": 15,
+        "food": "Hay + Cattle Feed",
+        "status": "Healthy",
         "image": "cow2.jpg"
     },
     {
-        "name": "Kamadhenu",
+        "id": 3,
+        "name": "Nandini",
         "breed": "Gir",
-        "milk": "15",
+        "age": "3 Years",
+        "milk": 10,
+        "food": "Grass + Mineral Feed",
+        "status": "Healthy",
         "image": "cow3.jpg"
     }
 ]

@@ -10,23 +10,46 @@
 
     <ul id="navMenu">
 
-        <li><a href="index.php">Home</a></li>
+        <li>
+            <a href="<?= BASE_URL ?>index.php">Home</a>
+        </li>
 
-        <li><a href="cows.php">Cows</a></li>
+        <li>
+            <a href="<?= BASE_URL ?>cows.php">Cows</a>
+        </li>
 
-        <li><a href="products.php">Products</a></li>
+        <li>
+            <a href="<?= BASE_URL ?>products.php">Products</a>
+        </li>
 
-        <li><a href="farmers.php">Farmers</a></li>
+        <li>
+            <a href="<?= BASE_URL ?>farmers.php">Farmers</a>
+        </li>
 
-        <li><a href="pricing.php">Pricing</a></li>
+        <li>
+            <a href="<?= BASE_URL ?>pricing.php">Pricing</a>
+        </li>
 
-        <li><a href="delivery.php">Delivery</a></li>
+        <li>
+            <a href="<?= BASE_URL ?>delivery.php">Delivery</a>
+        </li>
 
-        <li><a href="cow-food.php">Cow Food</a></li>
+        <li>
+            <a href="<?= BASE_URL ?>cow-food.php">Cow Food</a>
+        </li>
 
-        <li><a href="cart.php">🛒 Cart</a></li>
+        <li>
+            <a href="<?= BASE_URL ?>cart.php">
+                🛒 Cart
+                <span id="cartCount">0</span>
+            </a>
+        </li>
 
-        <li><a href="login.php">Login</a></li>
+        <li>
+            <a href="<?= BASE_URL ?>login.php">
+                Login
+            </a>
+        </li>
 
     </ul>
 

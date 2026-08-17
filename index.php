@@ -1,42 +1,14 @@
 <?php
-
 include "includes/header.php";
 include "includes/navbar.php";
 
 $cows = readJSON("cows.json");
 $products = readJSON("products.json");
-
 ?>
 
-<!-- 3D BACKGROUND -->
-<div class="home-3d-bg">
-
-    <div class="home-circle home-circle1"></div>
-    <div class="home-circle home-circle2"></div>
-    <div class="home-circle home-circle3"></div>
-
-    <div class="home-cube home-cube1"></div>
-    <div class="home-cube home-cube2"></div>
-    <div class="home-cube home-cube3"></div>
-
-    <div class="floating-milk milk-a">🥛</div>
-    <div class="floating-milk milk-b">🥛</div>
-    <div class="floating-milk milk-c">🥛</div>
-
-    <div class="floating-grass grass-a">🌱</div>
-    <div class="floating-grass grass-b">🌿</div>
-
-</div>
-
-
-<!-- HERO -->
 <section class="hero">
 
     <div class="hero-content">
-
-        <div class="welcome-badge">
-            🌱 Fresh From Our Farm
-        </div>
 
         <h1>
             Fresh Milk From
@@ -45,17 +17,18 @@ $products = readJSON("products.json");
 
         <p>
             Healthy cows. Happy farmers.
-            Fresh and natural dairy products
-            delivered to your home.
+            Fresh and natural dairy products.
         </p>
 
         <div class="hero-buttons">
 
-            <a href="products.php" class="btn">
+            <a href="products.php"
+               class="btn">
                 🥛 Shop Products
             </a>
 
-            <a href="cows.php" class="btn secondary">
+            <a href="cows.php"
+               class="btn secondary">
                 🐄 View Cows
             </a>
 
@@ -63,52 +36,29 @@ $products = readJSON("products.json");
 
     </div>
 
+    <div class="hero-image">
 
-    <!-- 3D COW -->
-    <div class="hero-image-3d">
-
-        <div class="cow-glow"></div>
-
-        <img
-            src="images/cow1.jpg"
-            alt="Dairy Cow">
-
-        <div class="milk-bubble">
-            🥛
-        </div>
-
-        <div class="leaf-bubble">
-            🌿
-        </div>
+        <img src="images/cow1.jpg"
+             alt="Dairy Cow">
 
     </div>
 
 </section>
 
 
-<!-- COWS -->
-<section class="section home-section">
+<section class="section">
 
-    <div class="page-title">
-
-        <h2>🐄 Our Cows</h2>
-
-        <p>
-            Meet the healthy cows from our farm.
-        </p>
-
-    </div>
-
+    <h2>🐄 Our Cows</h2>
 
     <div class="cards">
 
         <?php foreach (array_slice($cows, 0, 3) as $cow): ?>
 
-            <div class="card home-card">
+            <div class="card">
 
                 <img
                     src="images/<?= htmlspecialchars($cow['image']) ?>"
-                    alt="<?= htmlspecialchars($cow['name']) ?>">
+                    alt="Cow">
 
                 <h3>
                     <?= htmlspecialchars($cow['name']) ?>
@@ -120,11 +70,12 @@ $products = readJSON("products.json");
                 </p>
 
                 <p>
-                    🥛 Milk:
+                    Milk:
                     <?= htmlspecialchars($cow['milk']) ?> L/day
                 </p>
 
-                <a href="cows.php" class="small-btn">
+                <a href="cows.php"
+                   class="small-btn">
                     View Details
                 </a>
 
@@ -137,45 +88,34 @@ $products = readJSON("products.json");
 </section>
 
 
-<!-- PRODUCTS -->
-<section class="section light home-section">
+<section class="section light">
 
-    <div class="page-title">
-
-        <h2>🥛 Our Products</h2>
-
-        <p>
-            Fresh dairy products directly from our farm.
-        </p>
-
-    </div>
-
+    <h2>🥛 Our Products</h2>
 
     <div class="cards">
 
         <?php foreach (array_slice($products, 0, 4) as $product): ?>
 
-            <div class="product-card home-card">
+            <div class="product-card">
 
                 <img
                     src="images/<?= htmlspecialchars($product['image']) ?>"
-                    alt="<?= htmlspecialchars($product['name']) ?>">
+                    alt="Product">
 
                 <h3>
                     <?= htmlspecialchars($product['name']) ?>
                 </h3>
 
-                <p class="price">
+                <p>
                     ₹<?= htmlspecialchars($product['price']) ?>
-                    /
-                    <?= htmlspecialchars($product['unit']) ?>
+                    /<?= htmlspecialchars($product['unit']) ?>
                 </p>
 
                 <button
                     class="buy-btn"
                     onclick='addToCart(<?= json_encode($product) ?>)'>
 
-                    🛒 Add to Cart
+                    Add to Cart
 
                 </button>
 
@@ -188,8 +128,7 @@ $products = readJSON("products.json");
 </section>
 
 
-<!-- FEATURES -->
-<section class="features home-features">
+<section class="features">
 
     <div>
         <span>🥛</span>

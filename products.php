@@ -17,7 +17,6 @@ $products = readJSON("products.json");
 
 </section>
 
-
 <section class="product-grid">
 
 <?php foreach ($products as $product): ?>
@@ -55,6 +54,5 @@ $products = readJSON("products.json");
 <?php endforeach; ?>
 
 </section>
-
 
 <?php include "includes/footer.php"; ?>
